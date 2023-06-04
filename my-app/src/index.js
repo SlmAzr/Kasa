@@ -14,8 +14,18 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <App />,
+    errorElement: <h1>404 not found</h1>
+  },{ 
+    path: "/flat",
+    element: <h1>Nos appert'</h1>
+  },{ 
+    path: "/about",
+    element: <h1>A propos</h1>
   },
+   
+   
+
 ]);
 
 

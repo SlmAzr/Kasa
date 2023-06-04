@@ -1,0 +1,23 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    color: #ff6060;
+    font-weight: bold;
+    gap: 2rem;
+
+
+}
+
+.logoNav{
+    margin-right: auto;
+}
+.Navbar a:hover{
+    text-decoration: underline;
+}
+
+
+.Navbar a{
+    text-decoration: none;
+    color: #ff6060;
+}
