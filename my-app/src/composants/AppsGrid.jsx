@@ -1,5 +1,5 @@
 import React from 'react'
-import "./AppsGrid.css"
+import "./AppsGrid.scss"
 import Appart from "./Appart";
 
 function AppsGrid() {

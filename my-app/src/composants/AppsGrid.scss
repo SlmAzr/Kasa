@@ -1,12 +1,16 @@
 .grid{
     background-color:rgba(128, 128, 128, 0.514);
-    min-height:60vh ;
-    border-radius: 1.3rem;
+    min-height:50vh ;
+    border-radius: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 2.5rem;
     justify-content: space-between;
+ &>*{
+    width: 100%;
+    max-width: 20rem;
+ }
 }
 
 @media screen and (width <= 825px) {

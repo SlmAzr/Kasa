@@ -4,10 +4,13 @@ import "./Navbar.css"
 
 function Navbar() {
   return (
+
     <nav className='Navbar'>
-      <div className='logoNav'>
-        <img src="logo.png" alt="logo" />
-      </div>
+      <NavLink to="/">
+        <div className='logoNav'>
+          <img src="logo.png" alt="logo" />
+        </div>
+      </NavLink>
 
       <NavLink to="/">Acceuil</NavLink>
 

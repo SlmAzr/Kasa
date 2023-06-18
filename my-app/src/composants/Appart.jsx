@@ -4,12 +4,14 @@ import "./Appart.css"
 
 function Appart() {
     return (
-
+        <Link to="/flat">
         <div className='appart'>
-            <Link to="/flat">
+            
+                {/* <img className='cardimg' src="https://picsum.photos/300/200" alt="" /> */}
                 <div className="title">Titre de la location</div>
-            </Link>
+            
             </div>
+            </Link>
     )
 }
 

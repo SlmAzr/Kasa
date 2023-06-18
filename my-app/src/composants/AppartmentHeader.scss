@@ -1,0 +1,90 @@
+.appartment-header {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    @media screen and (width <= 768px) {
+        flex-direction: column;
+      
+    }
+
+    .appartment-title {
+        flex-grow: 1;
+    }
+    .appartment-owner{
+        display: flex;
+        flex-direction: column;
+        @media screen and (width <= 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .owner-details {
+        display: flex;
+        gap: .4rem;
+        @media  screen and (width <= 768px) {
+            order: 1;
+        }
+    }
+
+    .badge {
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        background-color: rgba(128, 128, 128, 0.623);
+
+    }
+
+    .appartment-stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        font-size: 1.9rem;
+
+        .on {
+            color: #ff6060;
+        }
+
+        .off {
+            color: rgba(128, 128, 128, 0.623);
+        }
+
+    }
+
+    h1 {
+        font-weight: 400;
+        margin-block: 0;
+    }
+
+    h2 {
+        font-weight: 400;
+        margin-top: 0.5em;
+        margin-bottom: .2em;
+        font-size: 20px;
+    }
+
+    & .appartment-tags {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+        gap: 1rem;
+
+        span {
+            background-color: #ff6060;
+            color: white;
+            padding: 0.3em 1em;
+            border-radius: 0.8rem;
+            text-align: center;
+        }
+        
+    }
+
+    h3 {
+        margin-block: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-weight: 400;
+    }
+
+}

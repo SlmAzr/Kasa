@@ -1,11 +1,15 @@
 .appart{   
-background-image: linear-gradient(to top,#863535,  #ff6060 );
+background-image: url("https://picsum.photos/300/200");
+background-size: cover;
 border-radius: .3rem;
 flex-basis: 30%;
 display: grid;
 align-items: end;
 min-width: 200px;
 min-height:250px;
+}
+a{
+    text-decoration: none;
 }
 
 
