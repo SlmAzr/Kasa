@@ -1,6 +1,7 @@
 .descpanel {
     margin-bottom: 1rem;
     flex-basis: 50%;
+    overflow: hidden;
     p{
         margin-block: 0;
     }
@@ -25,7 +26,18 @@
     position: relative ;
     top: -0.3rem;
     z-index: -1;
-    
-    
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    &.hidden{
+        opacity: 0;
+    transform: translateY(-100%);
+    }
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+
+      }
+
+   
    }
 }
+  

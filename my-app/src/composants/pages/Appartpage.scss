@@ -5,6 +5,7 @@
         display: flex;
         gap: 1rem;
         margin-bottom: 2rem;
+        overflow: hidden;
         @media screen and (width <= 768px) {
             flex-direction: column;
         }
