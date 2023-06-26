@@ -5,21 +5,17 @@
     color: #ff6060;
     font-weight: bold;
     gap: 2rem;
-
-
 }
 @media screen and (width<=768px) {
     .Navbar{
         text-transform: uppercase;
         font-weight: 400;
     }
-    
 }
 
 .Navbar a:hover{
     text-decoration: underline;
 }
-
 .Navbar a.active{
     text-decoration: underline;
 }

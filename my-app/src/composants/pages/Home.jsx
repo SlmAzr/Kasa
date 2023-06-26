@@ -5,7 +5,7 @@ import AppsGrid from "../AppsGrid";
 import Main from "../Main";
 import Footer from '../Footer';
 
-import "./Home.css"
+import "./Home.scss"
 
 
 function Home() {

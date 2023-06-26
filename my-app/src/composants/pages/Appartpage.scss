@@ -1,13 +1,12 @@
 .appartment-page {
     color: #ff6060;
    
-    .appartment-desc-ria{
+    .appartment-desc{
         display: flex;
         gap: 1rem;
         margin-bottom: 2rem;
         @media screen and (width <= 768px) {
             flex-direction: column;
-
         }
     }
     
