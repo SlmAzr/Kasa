@@ -28,12 +28,13 @@ function Appartpage() {
     return (
         <div className='appartment-page'>
            
-            <ImageBanner image={Appart.cover}/>
+            <ImageBanner pictures={Appart.pictures}/>
             <AppartmentHeader Appart={Appart}/>
 
             <div className="appartment-desc">
                 <DescPanel title="Description" content={Appart.description} />
-                <DescPanel title="Equipement" content={Appart.equipments.map(equi=><li>{equi}</li>)}/>
+                <DescPanel title="Equipement" content={Appart.equipments.map((equi,i)=>
+                <li key={i}>{equi}</li>)}/>
             </div>
         </div>
     )
