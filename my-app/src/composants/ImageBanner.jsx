@@ -49,6 +49,7 @@ function ImageBanner(props) {
 
  {picturePre() && (<> 
   <button className=" btn btn-suiv" onClick={suivant} ><i class="fas fa-chevron-right"></i></button>
+  <span className='counter'>{currentPic+1 }/{pictures.length}</span>
 <button className='btn btn-prec' onClick={precedent}><i class="fas fa-chevron-left"></i>
 </button>
 </>

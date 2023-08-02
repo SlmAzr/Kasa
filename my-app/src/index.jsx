@@ -14,14 +14,19 @@ import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
+  Route,
 } from "react-router-dom";
+import Main from './composants/Main';
 // import Appart from './composants/Appart';
 
 
 const HeaderFooterLayout = () => {
   return <>
+  
     <Navbar />
+    <Main> 
     <Outlet />
+    </Main>
     <Footer />
   </>
 }
@@ -32,18 +37,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       {
+        
         path: "/",
         element: <Home />
-
+         
       },
       {
-        path: "/flat",
-        element: <Appartpage/>
+        path: "/flat/:id",
+         element: <Appartpage/>,
+    
       },
       {
         path: "/about",
         element: <About/>
       },
+      
     ]
   },
 ]);

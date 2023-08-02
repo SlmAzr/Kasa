@@ -8,14 +8,16 @@ function DescPanel(props) {
 
   }
   const contentClass = (isVisible ? "visible" : "hidden") + " desc-content";
-  const chevronClass = (isVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
+  const rotation = (isVisible ? "rotates": "");
+  const push = (isVisible ? "push": "") + " descpanel";
   return (
-    <div className="descpanel">
+    <div className={push}>
       <p className='desc-header ' onClick={show}>
         <span>{props.title}</span>
-        <i className={chevronClass}></i>
+
+        <i className={rotation}><i class="fas fa-chevron-down"></i></i>
       </p>
-    {/* {isVisible ? "visible":"hidden"} */}
+   
     <p className={contentClass}>  {props.content} </p>
     </div>
   )

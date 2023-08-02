@@ -1,22 +1,39 @@
 .grid{
-    background-color:rgba(128, 128, 128, 0.514);
-    min-height:50vh ;
+
+    background-color:rgba(189, 188, 188, 0.212);
+    min-height: 50vh;
     border-radius: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 2.5rem;
+    padding: 1rem;
     justify-content: space-between;
  &>*{
     width: 100%;
-    max-width: 20rem;
+    max-width: 19rem;
  }
+ 
 }
 
-@media screen and (width <= 825px) {
-    .grid{
-        justify-content: center;
-        background-color: white;
-        padding: 0;
-    }
+
+@media screen and (width <= 768px) {
+ 
+.grid{ 
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &>*{
+        width: 100%;
+        max-width:100%;
+     }
 }
+ 
+}
+    
+
+    
+

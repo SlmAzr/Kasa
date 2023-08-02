@@ -4,7 +4,7 @@ import "./Navbar.scss"
 
 function Navbar() {
   return (
-
+    <div className="wrap-nav">
     <nav className='Navbar'>
       <NavLink to="/">
         <div className='logoNav'>
@@ -18,6 +18,7 @@ function Navbar() {
         <div>A propos</div>
       </NavLink>
     </nav>
+    </div>
   )
 }
 

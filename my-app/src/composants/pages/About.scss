@@ -1,3 +1,15 @@
 .About-container{
-    padding-inline: 3rem; ;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    >*{
+        width: 100%;
+    }
+    @media screen and (width <=768px) {
+        width: 100%;
+       }
+   
 }
