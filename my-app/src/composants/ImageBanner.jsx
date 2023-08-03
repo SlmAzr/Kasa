@@ -31,7 +31,7 @@ function ImageBanner(props) {
 
   const defautOrCarousel= () =>{ 
     if(!picturePre()){
-      return <img src="https://picsum.photos/1080" className='show' alt="" />
+      return <img src="default-mont.jpeg" className='show' alt="" />
     }
      return pictures.map((pic, i)=>(
       <img  key={pic} src={pic} className={getClassName(i)}></img>
