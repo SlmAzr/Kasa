@@ -6,9 +6,6 @@ import "./Appart.scss"
 function Appart(props) {
  
     
-    // const state = {
-    //   id: props.id
-    // };
     return (
     
           

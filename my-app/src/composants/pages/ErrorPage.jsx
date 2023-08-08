@@ -7,7 +7,7 @@ import "./ErrorPage.scss"
 function ErrorPage() {
   return (
     <> 
-    <Navbar/>
+    {/* <Navbar/> */}
     <Main>
     <div className="ErrorContent">
         <h1>404</h1>

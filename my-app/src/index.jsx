@@ -33,8 +33,9 @@ const HeaderFooterLayout = () => {
 
 const router = createBrowserRouter([
   {
+    
     element: <HeaderFooterLayout />,
-    errorElement: <ErrorPage/>,
+      errorElement: <ErrorPage/>,  
     children: [
       {
         
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About/>
       },
+    
       
     ]
   },
@@ -68,3 +70,6 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
