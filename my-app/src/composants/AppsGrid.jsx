@@ -11,10 +11,7 @@ const [appartments, setAppartments]= useState([]);
 useEffect(fetchAppartments,[])
 
 function fetchAppartments(){ 
-//   fetch("../../data/db.json")
-//   .then((res)=> res.json())
-// .then((res) => setAppartments(res))
-// .catch(console.error);
+
 setAppartments(items);
 }
 
