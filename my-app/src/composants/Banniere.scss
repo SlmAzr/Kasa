@@ -1,18 +1,14 @@
-
-.Banner{
-    position: relative;
-    padding-inline: 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../../public/montagne.jpg);
-    min-height: 200px;
-    margin: auto;
-    border-radius: 2rem;
-    display: grid;
-    place-items: center;
-    color: white;
-    margin-bottom: 1.5rem;
-    max-width: 100%;
-  
-
-    
+.Banner {
+  position: relative;
+  padding-inline: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../public/montagne.jpg);
+  min-height: 200px;
+  margin: auto;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
 }
-

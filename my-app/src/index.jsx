@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Home from './composants/pages/Home';
-import Appartpage from './composants/pages/Appartpage';
-import reportWebVitals from './reportWebVitals';
-import Footer from './composants/Footer';
-import Navbar from './composants/Navbar';
-import About from './composants/pages/About';
-import ErrorPage from './composants/pages/ErrorPage';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Home from "./composants/pages/Home";
+import Appartpage from "./composants/pages/Appartpage";
+import reportWebVitals from "./reportWebVitals";
+import Footer from "./composants/Footer";
+import Navbar from "./composants/Navbar";
+import About from "./composants/pages/About";
+import ErrorPage from "./composants/pages/ErrorPage";
 
 import {
   createBrowserRouter,
@@ -16,50 +15,42 @@ import {
   Outlet,
   Route,
 } from "react-router-dom";
-import Main from './composants/Main';
-
-
+import Main from "./composants/Main";
 
 const HeaderFooterLayout = () => {
-  return <>
-  
-    <Navbar />
-    <Main> 
-    <Outlet />
-    </Main>
-    <Footer />
-  </>
-}
+  return (
+    <>
+      <Navbar />
+      <Main>
+        <Outlet />
+      </Main>
+      <Footer />
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
-    
     element: <HeaderFooterLayout />,
-      errorElement: <ErrorPage/>,  
+    errorElement: <ErrorPage />,
     children: [
       {
-        
         path: "/",
-        element: <Home />
-         
+        element: <Home />,
       },
       {
         path: "/flat/:id",
-         element: <Appartpage/>,
-    
+        element: <Appartpage />,
       },
       {
         path: "/about",
-        element: <About/>
+        element: <About />,
       },
-    
-      
-    ]
+    ],
   },
 ]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
@@ -70,6 +61,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-

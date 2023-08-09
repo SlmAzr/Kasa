@@ -1,20 +1,16 @@
-
-
-.ErrorContent{
+.ErrorContent {
+  color: #ff6060;
+  text-align: center;
+  h1 {
+    font-size: 150px;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+  a {
     color: #ff6060;
-    text-align: center;
-    h1{
-        font-size: 150px;
-        margin-bottom: .5em;
-    }
-    h2{
-        font-size: 35px;
-        font-weight: 400;
-    }
-    a{
-        color: #ff6060;
-        text-decoration: underline;
-      
-       
-    }
+    text-decoration: underline;
+  }
 }

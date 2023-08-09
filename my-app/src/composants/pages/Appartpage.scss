@@ -1,21 +1,19 @@
 .appartment-page {
-    color: #ff6060;
-   
-    .appartment-desc{
-        justify-content: space-between;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        overflow: hidden;
-        @media screen and (width <= 768px) {
-            flex-direction: column;
-           
-        }
+  color: #ff6060;
+
+  .appartment-desc {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    @media screen and (width <= 768px) {
+      flex-direction: column;
     }
-    .descpanel{
-        width: 100%;
-    }
-  
+  }
+  .descpanel {
+    width: 100%;
+  }
 }

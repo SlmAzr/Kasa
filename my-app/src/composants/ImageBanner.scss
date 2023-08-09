@@ -1,57 +1,52 @@
 .image-banner {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  .btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.473);
+    font-size: 2rem;
+    border: none;
+    &.btn-suiv {
+      right: 0;
+    }
+    &.btn-prec {
+      left: 0;
+    }
+  }
+  .counter {
+    width: 100%;
+    color: #ffff;
+    position: absolute;
+    bottom: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+  }
+  .img-container {
     position: relative;
- 
-    .btn {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        bottom: 0;
-        width: 4rem;
-        background-color: transparent;
-        color: rgba(255, 255, 255, 0.473);
-        font-size: 2rem;
-        border: none;
-        &.btn-suiv{
-            right: 0;
-        }
-        &.btn-prec{
-           left: 0;
-        }
+    height: 24rem;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 1rem;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+
+      &.show {
+        opacity: 1;
+      }
     }
-.counter{
-            width: 100%;
-            color: #ffff;
-            position: absolute;
-            bottom: 1.3rem;
-            font-weight: 400;
-            text-align: center;
-            font-size: 25px;
-            
-        }
-    .img-container {
-        position: relative;
-        height: 24rem;
-        width: 100%;
-       
-
-        img {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            inset: 0;
-            object-fit: cover;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 1rem;
-            opacity: 0;
-            transition: opacity .5s ease-in-out;
-
-            &.show {
-                opacity: 1;
-            }
-
-        }
-
-    }
-
+  }
 }

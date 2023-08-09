@@ -1,11 +1,11 @@
-.main{
-   padding: 2rem 3rem;
-    min-height: 100%; 
-   max-width: 1650px;
-   margin: auto;
+.main {
+  padding: 2rem 3rem;
+  min-height: 100%;
+  max-width: 1650px;
+  margin: auto;
 }
-@media screen and (width <= 768px ) {
-   .main{
+@media screen and (width <= 768px) {
+  .main {
     padding: 1rem;
-   }
+  }
 }
